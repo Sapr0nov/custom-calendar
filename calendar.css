@@ -1,0 +1,132 @@
+#calendar {
+    display: flex;
+    flex-direction: column;
+}
+.calendar--popUp {
+    display: flex;
+    border-radius: 12px;
+    padding: 2px 24px;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+.calendar--title {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    font-weight: bold;
+}
+.week-days {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 6px 0px;
+}
+.week-day {
+    width: 42px;
+    text-align: center;
+}
+.calendar-days {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-line {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 6px 0px;
+}
+
+.calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+.calendar-day__week-end {
+    color: #698AB7;
+}
+.calendar-day__grey {
+    color: #DBDBDB;
+}
+.calendar-day__today {
+    border: 1px solid #698AB7;
+    border-radius: 84px;
+}
+.calendar--prev-month {
+    display: flex;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+.calendar-day__select {
+    color: white;
+    background: #698AB7;
+    border-radius: 84px;
+}
+.calendar--prev-month:after {
+    content: url('data:image/svg+xml;utf8,<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.41136e-06 6.98749C4.40262e-06 7.08749 2.48652e-06 7.1875 0.100003 7.2875C0.100003 7.3875 0.200001 7.38749 0.200001 7.48749C0.200001 7.48749 0.199999 7.5875 0.3 7.5875L6.4 13.5875C6.7 13.8875 7.2 13.8875 7.5 13.5875C7.8 13.2875 7.8 12.7875 7.5 12.4875L2.7 7.7875L15.7 7.7875C16.1 7.7875 16.5 7.48749 16.5 6.98749C16.5 6.48749 16.2 6.18749 15.7 6.18749L2.5 6.18749L7.3 1.48749C7.6 1.18749 7.6 0.687502 7.3 0.387502C7.2 0.287501 7 0.18749 6.8 0.18749C6.6 0.18749 6.4 0.287501 6.3 0.387502L0.3 6.3875C0.199999 6.4875 0.200003 6.5875 0.100003 6.5875C2.52149e-06 6.7875 4.42884e-06 6.78749 4.41136e-06 6.98749C4.4201e-06 6.88749 4.41136e-06 6.98749 4.41136e-06 6.98749Z" fill="black"/></svg>');
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    cursor: pointer;
+}
+.calendar--next-month {
+    display: flex;
+    position: relative;
+    width: 16px;
+    height: 16px;
+}
+.calendar--next-month:after {
+    content: url('data:image/svg+xml;utf8,<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 7.01251C17 6.91251 17 6.8125 16.9 6.7125C16.9 6.6125 16.8 6.61251 16.8 6.51251C16.8 6.51251 16.8 6.4125 16.7 6.4125L10.6 0.4125C10.3 0.1125 9.8 0.1125 9.5 0.4125C9.2 0.7125 9.2 1.21251 9.5 1.51251L14.3 6.2125H1.3C0.899999 6.2125 0.5 6.51251 0.5 7.01251C0.5 7.51251 0.799999 7.81251 1.3 7.81251H14.5L9.7 12.5125C9.4 12.8125 9.4 13.3125 9.7 13.6125C9.8 13.7125 10 13.8125 10.2 13.8125C10.4 13.8125 10.6 13.7125 10.7 13.6125L16.7 7.6125C16.8 7.5125 16.8 7.4125 16.9 7.4125C17 7.2125 17 7.21251 17 7.01251C17 7.11251 17 7.01251 17 7.01251Z" fill="black"/></svg>');
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#calendar input[type="date" i] {
+    display: none;
+}
+.text-input__data {
+    border-radius: 48px;
+    background: white;
+    padding: 9px 20px;
+    height: 38px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+#calendar-depart .calendar-title {
+    padding: 0px 24px;
+}
+#calendar-depart .week-days {
+    padding: 2px 0px;
+}
+#calendar-depart .calendar-line{
+    padding: 1px 0px;
+}
+#calendar-depart .calendar-day {
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+}
