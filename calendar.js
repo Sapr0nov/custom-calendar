@@ -170,8 +170,14 @@ export class Calendar {
                 }
                 day.textContent = monthDays.getDate();
                 day.dataset.day = monthDays.getDate();
+                day.dataset.month = monthDays.getMonth();
+                day.dataset.year = monthDays.getFullYear();
                 calendarLine.appendChild(day);
                 day.addEventListener('click', e => { 
+                    // делаем не кликабельными серые дни
+                    if (day.classList.contains("calendar-day__grey")) {
+                        return;
+                    }
                     document.querySelectorAll('.calendar-day__select').forEach ( el => {
                         el.classList.remove('calendar-day__select');
                     });
